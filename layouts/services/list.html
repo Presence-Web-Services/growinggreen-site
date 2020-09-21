@@ -1,0 +1,10 @@
+{{ define "head" }}
+  {{ partial "asset.html" (dict "file" "/css/services/image.css") }}
+  {{ partial "asset.html" (dict "file" "/css/services/single.css") }}
+  {{ partial "asset.html" (dict "file" "/css/services/other.css") }}
+  {{ partial "asset.html" (dict "file" "/css/services/list.css") }}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "services/list.html" . }}
+{{ end }}

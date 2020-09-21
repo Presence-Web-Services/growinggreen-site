@@ -1,0 +1,9 @@
+<article id="{{ lower .Title }}">
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }} we offer</a></h1>
+  {{ range .Pages }}
+    {{ .Render "service" }}
+    {{ if modBool .Weight 2 }}
+      <div class="flex_break" aria-hidden="true"></div>
+    {{ end }}
+  {{ end }}
+</article>

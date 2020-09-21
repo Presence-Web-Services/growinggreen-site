@@ -1,0 +1,12 @@
+baseURL = "http://growinggreentrees.net/"
+languageCode = "en-us"
+title = "Home"
+theme = "growinggreen"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+[params]
+  author = "Presence Web Services"
+  description = "Tree Service in Redgranite, Wisconsin. We offer planting, trimming, removal, injection and other services. Serving Waushara and surrounding counties."
+  phone = "+19202906368"
+[markup.goldmark.renderer]
+  unsafe= true

@@ -1,0 +1,9 @@
+<article id="{{ lower .Title }}">
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  <div id="boxes">
+    {{ range .Pages }}
+      {{ .Render "review" }}
+    {{ end }}
+  </div>
+  <button onclick="window.open('https://search.google.com/local/reviews?placeid=ChIJiQW7jmA_AYgRpn47fZ2Mh0U');">View all {{ lower .Title }}<img src="/icons/pop_out_white.svg" alt="Open link in a new tab or window" class="pop_out"></button>
+</article>

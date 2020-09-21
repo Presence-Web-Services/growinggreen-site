@@ -1,0 +1,8 @@
+<article id="{{ lower .Title }}">
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  <span id="{{ lower .Title }}-grid">
+  {{ range .Pages }}
+    {{ .Render "qualification" }}
+  {{ end }}
+  </span>
+</article>

@@ -1,0 +1,49 @@
+#qualifications {
+  background-color: #f2f8d6;
+  padding: 1em;
+}
+
+@media (min-width: 75rem) {
+  #qualifications-grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid: 'title1 title2' 1fr
+          'text1 text2' 1fr
+          'image text2' 3fr
+          'image title3' 1fr
+          'image text3' 2fr;
+  }
+  #qualifications-grid p {
+    margin: 0;
+    align-self: start;
+  }
+  #local, #experienced, #collaborative {
+    display: contents;
+  }
+  #local h1 {
+    grid-area: title1;
+  }
+  #local p {
+    grid-area: text1;
+  }
+  #local a {
+    grid-area: image;
+  }
+  #local img {
+    width: 26em;
+    height: 26em;
+  }
+  #experienced h1 {
+    grid-area: title2;
+  }
+  #text2 {
+    grid-area: text2;
+  }
+  #collaborative h1 {
+    grid-area: title3;
+  }
+  #text3 {
+    grid-area: text3;
+  }
+}

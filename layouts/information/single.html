@@ -1,0 +1,7 @@
+{{ define "head" }}
+  {{ partial "asset.html" (dict "file" "/css/information/single.css") }}
+{{ end }}
+
+{{ define "main" }}
+  {{ .Render "information" }}
+{{ end }}

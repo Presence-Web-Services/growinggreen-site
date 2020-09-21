@@ -1,0 +1,7 @@
+{{ define "head" }}
+  {{ partial "asset.html" (dict "file" "/css/qualifications/single.css") }}
+{{ end }}
+
+{{ define "main" }}
+  {{ .Render "qualification" }}
+{{ end }}

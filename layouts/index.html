@@ -1,0 +1,20 @@
+{{ define "head" }}
+  {{ partial "asset-css-bundle.html" (dict "bundleFile" "index.css" "cssFiles" (slice "/css/cta.css" "/css/services/image.css" "/css/services/single.css" "/css/services/other.css" "/css/services/list.css" "/css/qualifications/single.css" "/css/qualifications/list.css" "/css/reviews/single.css" "/css/reviews/list.css" "/css/information/single.css" "/css/information/list.css")) }}
+  {{ partial "asset.html" (dict "file" "/js/open_time.js") }}
+{{ end }}
+
+{{ define "main" }}
+  {{ range .Pages }}
+    {{ if and (eq .Section "") (ne .Title "Email") }}
+      {{ .Content }}
+    {{ else if eq .Section "services" }}
+      {{ partial "services/list.html" . }}
+    {{ else if eq .Section "qualifications" }}
+      {{ partial "qualifications/list.html" . }}
+    {{ else if eq .Section "reviews" }}
+      {{ partial "reviews/list.html" . }}
+    {{ else if eq .Section "information" }}
+      {{ partial "information/list.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
