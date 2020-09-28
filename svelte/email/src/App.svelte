@@ -114,43 +114,6 @@ function hpChange() {
 {/if}
 
 <style>
-/* #email_article {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#email_article h1 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  flex: 0 0 auto;
-}
-#email_article form {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#email, #message {
-  font-size: inherit;
-  margin-bottom: 0.5em;
-  width: 90%;
-  min-width: 18em;
-  max-width: 33em;
-}
-#email {
-  text-align: center;
-  border-radius: 2%/30%;
-}
-#message {
-  padding: 1em;
-  flex: 1 0 auto;
-  border-radius: 2%/3%;
-}
-@media (min-width: 75em) {
-  #message {
-    font-size: 1rem;
-  }
-} */
 form * {
   display: block;
 }
