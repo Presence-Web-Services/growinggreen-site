@@ -39,7 +39,7 @@ function checkHP() {
 }
 
 function clearFields() {
-  email = message = hp = "";
+  email = message = hp = '';
 }
 
 function sendData() {
@@ -63,7 +63,7 @@ function sendData() {
 }
 
 function sendEmail(event) {
-  emailError = messageError = hpError = responseError = responseSuccess = "";
+  emailError = messageError = hpError = responseError = responseSuccess = '';
   sending = true;
   checkEmail();
   checkMessage();
@@ -76,15 +76,15 @@ function sendEmail(event) {
 }
 
 function emailChange() {
-  emailError = responseError = "";
+  emailError = responseError = '';
 }
 
 function messageChange() {
-  messageError = responseError = "";
+  messageError = responseError = '';
 }
 
 function hpChange() {
-  hpError = responseError = "";
+  hpError = responseError = '';
 }
 
 </script>
