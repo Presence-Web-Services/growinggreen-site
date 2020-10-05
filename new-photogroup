@@ -16,7 +16,7 @@ for (( i=0; i<$numPhotos; i++ )); do
   type=$(echo $types | awk -F',' "{print \$$j}")
   echo -e "{{< photos/gallery-image upload=\"$upload\" photo=\"$i\" type=\"$type\" caption=\"$caption\" >}}\n" >> content/photos/upload${upload}.md
   if [[ $i -eq 0 ]]; then
-    echo -e "<!--more-->\n"
+    echo -e "<!--more-->\n" >> content/photos/upload${upload}.md
   fi
 done
 
