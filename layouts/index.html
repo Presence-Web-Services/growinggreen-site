@@ -1,5 +1,5 @@
 {{ define "head" }}
-  {{ partial "asset-css-bundle.html" (dict "bundleFile" "index.css" "cssFiles" (slice "/css/cta.css" "/css/services/image.css" "/css/services/single.css" "/css/services/other.css" "/css/services/list.css" "/css/qualifications/single.css" "/css/qualifications/list.css" "/css/reviews/single.css" "/css/reviews/list.css" "/css/information/single.css" "/css/information/list.css")) }}
+  {{ partial "asset-css-bundle.html" (dict "bundleFile" "index.css" "cssFiles" (slice "/css/cta.css" "/css/services/image.css" "/css/services/single.css" "/css/services/other.css" "/css/services/list.css" "/css/qualifications/single.css" "/css/qualifications/list.css" "/css/reviews/single.css" "/css/reviews/list.css" "/css/information/single.css" "/css/information/list.css" "css/photos/summary.css" "css/photos/list.css" "css/photos/few.css")) }}
   {{ partial "asset.html" (dict "file" "/js/open_time.js") }}
 {{ end }}
 
@@ -13,6 +13,8 @@
       {{ partial "qualifications/list.html" . }}
     {{ else if eq .Section "reviews" }}
       {{ partial "reviews/list.html" . }}
+    {{ else if eq .Section "photos" }}
+      {{ partial "photos/few.html" . }}
     {{ else if eq .Section "information" }}
       {{ partial "information/list.html" . }}
     {{ end }}

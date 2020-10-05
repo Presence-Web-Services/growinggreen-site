@@ -1,0 +1,9 @@
+#photos .flex_break {
+  flex: 0 0 100%;
+}
+#photos button {
+  border-radius: 5%/30%;
+  height: 3em;
+  width: 16em;
+  margin-bottom: 1em;
+}

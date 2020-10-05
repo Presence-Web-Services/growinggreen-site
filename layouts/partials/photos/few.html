@@ -1,0 +1,8 @@
+<article id="{{ lower .Title }}">
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  {{ range first 3 .Pages }}
+    {{ .Render "photo-summary" }}
+  {{ end }}
+  <div class="flex_break" aria-hidden="true"></div>
+  <button onclick="window.location='{{ .RelPermalink }}';">View all photos</button>
+</article>

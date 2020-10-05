@@ -1,0 +1,8 @@
+{{ define "head" }}
+  {{ partial "asset.html" (dict "file" "/css/photos/summary.css") }}
+  {{ partial "asset.html" (dict "file" "/css/photos/list.css") }}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "photos/list.html" . }}
+{{ end }}
