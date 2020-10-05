@@ -14,7 +14,10 @@ for (( i=0; i<$numPhotos; i++ )); do
   j=$(($i + 1))
   caption=$(echo $captions | awk -F',' "{print \$$j}")
   type=$(echo $types | awk -F',' "{print \$$j}")
-  echo "{{< photos/gallery-image upload=\"$upload\" photo=\"$i\" type=\"$type\" caption=\"$caption\" >}}" >> content/photos/upload${upload}.md
+  echo -e "{{< photos/gallery-image upload=\"$upload\" photo=\"$i\" type=\"$type\" caption=\"$caption\" >}}\n" >> content/photos/upload${upload}.md
+  if [[ $i -eq 0 ]]; then
+    echo -e "<!--more-->\n"
+  fi
 done
 
 ./build
