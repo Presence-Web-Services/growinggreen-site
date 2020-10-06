@@ -6,6 +6,12 @@ numPhotos="$3"
 captions="$4"
 types="$5"
 
+echo "upload: ${upload}"
+echo "title: ${title}"
+echo "numPhotos: ${numPhotos}"
+echo "captions: ${captions}"
+echo "types: ${types}"
+
 hugo new photos/upload${upload}.md
 
 sed -i '' "s|headline: \"\"|headline: \"${title}\"|g" content/photos/upload${upload}.md
