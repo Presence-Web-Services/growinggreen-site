@@ -1,6 +1,65 @@
 {{ define "head" }}
   {{ partial "asset-css-bundle.html" (dict "bundleFile" "index.css" "cssFiles" (slice "/css/cta.css" "/css/services/image.css" "/css/services/single.css" "/css/services/other.css" "/css/services/list.css" "/css/qualifications/single.css" "/css/qualifications/list.css" "/css/reviews/single.css" "/css/reviews/list.css" "/css/information/single.css" "/css/information/list.css" "css/photos/summary.css" "css/photos/list.css" "css/photos/few.css")) }}
   {{ partial "asset.html" (dict "file" "/js/open_time.js") }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://growinggreentrees.net",
+    "name": "Growing Green Tree Care & Landscaping",
+    "logo": "https://growinggreentrees.net/icons/logo.svg",
+    "image": [
+      "https://storage.googleapis.com/growinggreen-assets/images/cta/background/3d.jpg",
+      "https://storage.googleapis.com/growinggreen-assets/images/services/planting/384w3d.jpg",
+      "https://storage.googleapis.com/growinggreen-assets/images/services/trimming/384w3d.jpg",
+      "https://storage.googleapis.com/growinggreen-assets/images/services/removal/384w3d.jpg",
+      "https://storage.googleapis.com/growinggreen-assets/images/services/injection/384w3d.jpg",
+      "https://storage.googleapis.com/growinggreen-assets/images/qualifications/family/500w3d.jpg"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "619 Foster Rd",
+      "addressLocality": "Redgranite",
+      "addressRegion": "WI",
+      "postalCode": "54970",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.037259,
+      "longitude": -89.097316
+    },
+    "url": "https://growinggreentrees.net",
+    "telephone": "+19202906368",
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "13:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "00:00",
+        "closes": "00:00"
+      }
+    ]
+  }
+  </script>
 {{ end }}
 
 {{ define "main" }}

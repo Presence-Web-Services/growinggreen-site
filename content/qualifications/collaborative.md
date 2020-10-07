@@ -4,6 +4,7 @@ date: 2020-09-07T14:21:37-05:00
 draft: false
 longTitle: "We work with you"
 weight: 3
+description: "Tell us what you are looking for, and we will collaborate with you. We love hearing your ideas!"
 ---
 <span id="text3">
 

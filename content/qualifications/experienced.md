@@ -4,6 +4,7 @@ date: 2020-09-07T14:21:22-05:00
 draft: false
 longTitle: "10+ years of qualified experience"
 weight: 2
+description: "We have over ten years of qualified experience. Let us access your tree in a quiet, safe, and reliable manner."
 ---
 <span id="text2">
 
