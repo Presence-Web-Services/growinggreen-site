@@ -19,4 +19,4 @@ site="../../"
 
 # setup index file for use in svelte
 cp "${site}/public/${1}/index.html" public/
-sed -i 's|</head>|<link rel="stylesheet" href="build/bundle.css"><script src="build/bundle.js" defer></script></head>|g' public/index.html
+sed -i '' 's|</head>|<link rel="stylesheet" href="build/bundle.css"><script src="build/bundle.js" defer></script></head>|g' public/index.html
