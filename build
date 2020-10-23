@@ -17,4 +17,4 @@ cd $site
 cp -r "${svelte}/public/" "public/${dirname}"
 
 #dockerize
-#./dockerize
+./dockerize
