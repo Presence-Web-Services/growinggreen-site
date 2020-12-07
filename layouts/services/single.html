@@ -5,5 +5,9 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ .Render "service" }}
+  {{ if eq .Title "Other" }}
+    {{ .Render "service-other" }}
+  {{ else }}
+    {{ .Render "service" }}
+  {{ end}}
 {{ end }}

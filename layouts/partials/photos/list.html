@@ -1,4 +1,4 @@
-<article id="{{ lower .Title }}">
+<article id="{{ .Params.shortTitle }}">
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
   {{ range .Pages }}
     {{ .Render "photo-summary" }}

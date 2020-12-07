@@ -6,6 +6,6 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   author = "Presence Web Services"
-  description = "Serving Oshkosh, Omro, Winneconne, Berlin, Redgranite, Wautoma, and surrounding areas of Wisconsin. We offer planting, trimming, removal, injection and other services."
+  description = "Arborist offering healthy, educated solutions to any aspect of your landscape. Our tree service is available all seasons. Our tree care services include trimming, removal, planting, and plant health care. We are located in Redgranite, Wisconsin, but our service areas include Oshkosh, Omro, Winneconne, Berlin, Wautoma, and much more."
 [markup.goldmark.renderer]
   unsafe= true

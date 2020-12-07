@@ -38,4 +38,7 @@
     align-self: start;
     margin-top: 3em;
   }
+  #service div p {
+    margin-top: 0;
+  }
 }
